@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rory of Smeg</title>
+<style>
+body{background:#001f4d;color:white;font-family:"Segoe UI",Verdana,"Trebuchet MS",sans-serif;font-size:20px;line-height:1.5;padding:20px}
+#output{white-space:pre-wrap;margin-bottom:10px;max-height:80vh;overflow-y:auto}
+input{background:#001f4d;color:white;border:2px solid white;width:100%;padding:10px;font-family:inherit;font-size:20px}
+</style>
+<style>
+@keyframes flash{0%,100%{color:red}50%{color:orange}}
+.flash-text{animation:flash 1s infinite;font-weight:bold}
+@keyframes blink-red{0%,100%{color:red;opacity:1}50%{opacity:0}}
+.blinking-red{animation:blink-red 1s infinite;font-weight:bold}
+@keyframes flash-yellow{0%,100%{color:#FFD700}50%{color:#FFFF66}}
+.flash-yellow{animation:flash-yellow 1s infinite;font-weight:bold;font-size:50px;text-align:center;display:block}
+@keyframes blink-yellow{0%,100%{color:#FFD700;opacity:1}50%{opacity:0}}
+.blinking-yellow{animation:blink-yellow 1s infinite;font-weight:bold;font-size:50px;text-align:center;display:block}
+</style>
+</head>
+<body>
+<div id="output"></div>
+<input id="input" placeholder="Type a command..." autofocus>
+
+<script src="rooms/bridge.js"></script>
+<script src="rooms/captain.js"></script>
+<script src="rooms/stasis.js"></script>
+<script src="rooms/stasisChamber.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
